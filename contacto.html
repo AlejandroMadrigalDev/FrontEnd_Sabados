@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="config/css/bootstrap.min.css">
+    <link rel="stylesheet" href="config/css/font-awesome.min.css">
+    <link rel="stylesheet" href="config/css/styles.css">
+    <script src="config/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Configuracion del header -->
+    <header>
+        <img src="img/imagen.png" alt="">
+        <h1>Tienda Online</h1>
+    </header>
+    <!-- Barra de Navegacion -->
+    <nav>
+        <ul>
+            <li><a href="index3.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Productos</a>
+                <ul>
+                    <li><a href="mapa.html"><i class="fa fa-bath" aria-hidden="true"></i> Granos</a></li>
+                    <li><a href="#"><i class="fa fa-tint" aria-hidden="true"></i> Aceites</a></li>
+                    <li><a href="#"><i class="fa fa-coffee" aria-hidden="true"></i> Lacteos</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i> Promociones</a></li>
+            <li><a href="contacto.html"><i class="fa fa-phone" aria-hidden="true"></i> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="container mb-5">
+        <h2 class="text-center text-primary mb-4">Contactenos YA!</h2>
+        <form id="contactoForm">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="email" placeholder="correodeejemplo@ejemplo.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Descripcion del mensaje</label>
+                <textarea class="form-control" id="descripcion" placeholder="Descripcion completa y detallada del mensaje a enviar" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div class="alert alert-success alert-dismissible fade show" id="alert" role="alert">
+            <i class="fa fa-check-circle-o" aria-hidden="true">Datos enviados correctamente</i>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 mb-5">
+                    <h5>Redes sociales</h5>
+                    <p>Conocenos en nuestra redes sociales</p>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fa fa-twitch" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-2 mb-5">
+                    <h5>Desarrollado por:</h5>
+                    <p>Desarrollos profesionales sas</p>
+                    <p>Contactanos en prosas@gmail.com</p>
+                </div>
+            </div> 
+        </div>
+    </footer>
+    <script>
+        document.getElementById("contactoForm");
+    </script>
+</body>
+</html>
